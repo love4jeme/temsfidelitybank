@@ -1,3 +1,4 @@
+# trigger pipeline test
 variable "vpc_cidrblock" {
   description = "CIDR block for the VPC"
   type        = string
