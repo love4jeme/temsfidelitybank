@@ -76,6 +76,9 @@ All of the following were captured live during this deployment — not staged.
 **Lambda → SES — successful invocation, real execution report**
 ![Lambda CloudWatch log](./screenshots/lambda-cloudwatch-log.png)
 
+**The actual login notification email, delivered**
+![Login notification email](./screenshots/login-notification-email.png)
+
 **Live application, served over the custom domain**
 ![Live site](./screenshots/live-site.png)
 
