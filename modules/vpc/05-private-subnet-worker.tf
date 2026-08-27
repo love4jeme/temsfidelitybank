@@ -6,7 +6,7 @@ resource "aws_subnet" "private_subnet_worker_1" {
   tags = {
     Name                                       = "${var.environment}-private-subnet-worker-1"
     Environment                                = var.environment
-    "kubernetes.io/cluster/${var.environment}" = "shared"
+    "kubernetes.io/cluster/${var.environment}-eks-cluster" = "shared"
     "kubernetes.io/role/internal-elb"          = "1"
   }
 }

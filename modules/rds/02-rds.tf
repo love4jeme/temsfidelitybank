@@ -1,7 +1,7 @@
 resource "aws_db_instance" "main" {
   identifier     = "${var.environment}-db"
-  engine         = "postgres"
-  engine_version = "15"
+  engine         = "mysql"
+  engine_version = "8.0"
   instance_class = "db.t3.micro"
 
   allocated_storage = 20

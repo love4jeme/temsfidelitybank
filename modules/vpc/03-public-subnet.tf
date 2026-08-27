@@ -8,7 +8,7 @@ resource "aws_subnet" "public_subnet_1" {
   tags = {
     Name                                       = "${var.environment}-public-subnet-1"
     Environment                                = var.environment
-    "kubernetes.io/cluster/${var.environment}" = "shared"
+    "kubernetes.io/cluster/${var.environment}-eks-cluster" = "shared"
     "kubernetes.io/role/elb"                   = "1"
 
   }
